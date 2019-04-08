@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28729.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Pomodoro X", "Pomodoro X.vcxproj", "{499B9503-786B-4526-8FA5-9951EAB8F4AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{499B9503-786B-4526-8FA5-9951EAB8F4AA}.Debug|x64.ActiveCfg = Debug|x64
+		{499B9503-786B-4526-8FA5-9951EAB8F4AA}.Debug|x64.Build.0 = Debug|x64
+		{499B9503-786B-4526-8FA5-9951EAB8F4AA}.Debug|x86.ActiveCfg = Debug|Win32
+		{499B9503-786B-4526-8FA5-9951EAB8F4AA}.Debug|x86.Build.0 = Debug|Win32
+		{499B9503-786B-4526-8FA5-9951EAB8F4AA}.Release|x64.ActiveCfg = Release|x64
+		{499B9503-786B-4526-8FA5-9951EAB8F4AA}.Release|x64.Build.0 = Release|x64
+		{499B9503-786B-4526-8FA5-9951EAB8F4AA}.Release|x86.ActiveCfg = Release|Win32
+		{499B9503-786B-4526-8FA5-9951EAB8F4AA}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F5A5D48B-7082-4946-84EA-E4CB4C623F56}
+	EndGlobalSection
+EndGlobal
