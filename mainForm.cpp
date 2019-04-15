@@ -1,4 +1,4 @@
-﻿#include "Form1.h"
+﻿#include "mainForm.h"
 
 using namespace System;
 using namespace System::Windows::Forms;
@@ -9,6 +9,6 @@ void main(){
 	Application::EnableVisualStyles();
 	Application::SetCompatibleTextRenderingDefault(false);
 
-	PomodoroX::Form1 form;
+	PomodoroX::mainForm form;
 	Application::Run(%form);
 }
