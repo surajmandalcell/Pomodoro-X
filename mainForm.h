@@ -42,6 +42,10 @@ namespace PomodoroX {
 	private: System::Windows::Forms::PictureBox^ pictureBox1;
 	private: System::Windows::Forms::PictureBox^ pictureBox2;
 	private: System::Windows::Forms::PictureBox^ pictureBox3;
+	private: System::Windows::Forms::Label^ label2;
+	private: System::Windows::Forms::Label^ label3;
+
+	private: System::ComponentModel::IContainer^ components;
 
 
 	protected:
@@ -54,7 +58,7 @@ namespace PomodoroX {
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
-		System::ComponentModel::Container ^components;
+
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
@@ -69,6 +73,8 @@ namespace PomodoroX {
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBox3 = (gcnew System::Windows::Forms::PictureBox());
+			this->label2 = (gcnew System::Windows::Forms::Label());
+			this->label3 = (gcnew System::Windows::Forms::Label());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox3))->BeginInit();
@@ -110,7 +116,7 @@ namespace PomodoroX {
 			this->pictureBox1->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->pictureBox1->Location = System::Drawing::Point(7, 4);
 			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(26, 26);
+			this->pictureBox1->Size = System::Drawing::Size(26, 28);
 			this->pictureBox1->TabIndex = 4;
 			this->pictureBox1->TabStop = false;
 			this->pictureBox1->Click += gcnew System::EventHandler(this, &mainForm::PictureBox1_Click);
@@ -119,7 +125,7 @@ namespace PomodoroX {
 			// 
 			this->pictureBox2->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.BackgroundImage")));
 			this->pictureBox2->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->pictureBox2->Location = System::Drawing::Point(19, 553);
+			this->pictureBox2->Location = System::Drawing::Point(21, 553);
 			this->pictureBox2->Name = L"pictureBox2";
 			this->pictureBox2->Size = System::Drawing::Size(30, 28);
 			this->pictureBox2->TabIndex = 4;
@@ -137,6 +143,33 @@ namespace PomodoroX {
 			this->pictureBox3->TabStop = false;
 			this->pictureBox3->Click += gcnew System::EventHandler(this, &mainForm::PictureBox1_Click);
 			// 
+			// label2
+			// 
+			this->label2->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->label2->Font = (gcnew System::Drawing::Font(L"Open Sans Light", 42));
+			this->label2->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(101)), static_cast<System::Int32>(static_cast<System::Byte>(38)),
+				static_cast<System::Int32>(static_cast<System::Byte>(165)));
+			this->label2->Location = System::Drawing::Point(0, 0);
+			this->label2->Name = L"label2";
+			this->label2->Size = System::Drawing::Size(383, 601);
+			this->label2->TabIndex = 5;
+			this->label2->Text = L"00:00:00";
+			this->label2->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			this->label2->Click += gcnew System::EventHandler(this, &mainForm::Label2_Click);
+			// 
+			// label3
+			// 
+			this->label3->AutoSize = true;
+			this->label3->Font = (gcnew System::Drawing::Font(L"Open Sans Light", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label3->ForeColor = System::Drawing::Color::Gainsboro;
+			this->label3->Location = System::Drawing::Point(156, 553);
+			this->label3->Name = L"label3";
+			this->label3->Size = System::Drawing::Size(67, 28);
+			this->label3->TabIndex = 6;
+			this->label3->Text = L"Timer";
+			this->label3->Click += gcnew System::EventHandler(this, &mainForm::Label3_Click);
+			// 
 			// mainForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -144,11 +177,13 @@ namespace PomodoroX {
 			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(24)), static_cast<System::Int32>(static_cast<System::Byte>(22)),
 				static_cast<System::Int32>(static_cast<System::Byte>(38)));
 			this->ClientSize = System::Drawing::Size(383, 601);
+			this->Controls->Add(this->label3);
 			this->Controls->Add(this->pictureBox3);
 			this->Controls->Add(this->pictureBox2);
 			this->Controls->Add(this->pictureBox1);
 			this->Controls->Add(this->button3);
 			this->Controls->Add(this->label1);
+			this->Controls->Add(this->label2);
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::None;
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->MaximizeBox = false;
@@ -183,6 +218,11 @@ private: System::Void Label1_Click(System::Object^ sender, System::EventArgs^ e)
 private: System::Void mainForm_Load(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void PictureBox1_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void Label2_Click(System::Object^ sender, System::EventArgs^ e) {
+		this->label2->Text = __TIME__;
+}
+private: System::Void Label3_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 };
 }
